@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  margin: 0;
+  padding: 40px;
+  font-family: sans-serif;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 10px;
+  background-color: rgb(31, 31, 31);
+  max-width: 90%;
+  width: 350px;
+  height: auto;
+  margin: 70px auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-profile {
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 80px;
+  height: auto;
+  padding-top: 10px;
+}
+
+.user-name,
+.user-location,
+.user-desc {
+  font-family: sans-serif;
+}
+
+.user-name {
+  color: white;
+  font-weight: bold;
+}
+
+.user-location {
+  color: rgb(197, 248, 42);
+  padding-bottom: 5px;
+}
+
+.user-desc {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.user-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.link:hover,
+.link:focus {
+  background-color: rgb(197, 248, 42);
+  color: rgb(20, 20, 20);
+}
+/* قواعد الوسائط لجعل التصميم أكثر توافقًا مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .profile-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .link {
+    font-size: 14px;
+    height: auto;
+    padding: 10px;
+  }
+}
